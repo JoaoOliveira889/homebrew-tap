@@ -5,21 +5,21 @@
 class Monogit < Formula
   desc "Terminal dashboard for managing multiple Git repositories"
   homepage "https://github.com/JoaoOliveira889/monogit"
-  version "0.1.0"
+  version "0.2.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/JoaoOliveira889/monogit/releases/download/v0.1.0/monogit_Darwin_x86_64.tar.gz"
-      sha256 "d31936795fbd123b5f0243dadfe4f02b4033ce6026520553a080a7b3f53045f0"
+      url "https://github.com/JoaoOliveira889/monogit/releases/download/v0.2.0/monogit_Darwin_x86_64.tar.gz"
+      sha256 "4c590efd340f0bf742ad2e87ed02340b79b46dccc4fdcf0e2e844ef3d71f5015"
 
       define_method(:install) do
         bin.install "monogit"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/JoaoOliveira889/monogit/releases/download/v0.1.0/monogit_Darwin_arm64.tar.gz"
-      sha256 "ffd8d6b7991e6ed4862482683b3e35602eda5912336e133623bf440715fe5fdc"
+      url "https://github.com/JoaoOliveira889/monogit/releases/download/v0.2.0/monogit_Darwin_arm64.tar.gz"
+      sha256 "0efac6d4e4b546b20a6891cc61add2ba1f4cc438b784ea6e93f686bb38b52a0c"
 
       define_method(:install) do
         bin.install "monogit"
@@ -29,15 +29,15 @@ class Monogit < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/JoaoOliveira889/monogit/releases/download/v0.1.0/monogit_Linux_x86_64.tar.gz"
-      sha256 "7c48872c82b75c855be7dfdfbe02eff2e6096159497fc063707dfa90082edbd1"
+      url "https://github.com/JoaoOliveira889/monogit/releases/download/v0.2.0/monogit_Linux_x86_64.tar.gz"
+      sha256 "25fd4697b7cba108c4b683dd1f9ba7711af4abf7b6bd98e77f8dc4e4d4e2343d"
       define_method(:install) do
         bin.install "monogit"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/JoaoOliveira889/monogit/releases/download/v0.1.0/monogit_Linux_arm64.tar.gz"
-      sha256 "3b2eb0cafd562ff3882747cd448b750d95d8efe8c418ed36734063800304db94"
+      url "https://github.com/JoaoOliveira889/monogit/releases/download/v0.2.0/monogit_Linux_arm64.tar.gz"
+      sha256 "967f847bd23f4ae3d081e5ce36f5b2621f3db785ca4f52adbf5d68086dd94873"
       define_method(:install) do
         bin.install "monogit"
       end
