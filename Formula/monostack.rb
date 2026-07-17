@@ -5,21 +5,21 @@
 class Monostack < Formula
   desc "Multi-service AWS dashboard for your terminal"
   homepage "https://github.com/JoaoOliveira889/monostack"
-  version "0.0.9"
+  version "0.1.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/JoaoOliveira889/monostack/releases/download/v0.0.9/monostack_Darwin_x86_64.tar.gz"
-      sha256 "c308d99e66660ac245eb896f813f9291f770012e4e30695a30ff89277503c386"
+      url "https://github.com/JoaoOliveira889/monostack/releases/download/v0.1.0/monostack_Darwin_x86_64.tar.gz"
+      sha256 "9df36d246e469a7848fbba8d8c4424fc8351e4e5a5629043030ab73bac23e0d5"
 
       define_method(:install) do
         bin.install "monostack"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/JoaoOliveira889/monostack/releases/download/v0.0.9/monostack_Darwin_arm64.tar.gz"
-      sha256 "a3c66552d400ed7bed92135ef6c947e4e813c33835127a1da8aa605956b13d49"
+      url "https://github.com/JoaoOliveira889/monostack/releases/download/v0.1.0/monostack_Darwin_arm64.tar.gz"
+      sha256 "06027fe67a0b65e193d2dcef930cbd2e38d7677a54bb321e33c584d96255a5c5"
 
       define_method(:install) do
         bin.install "monostack"
@@ -29,15 +29,15 @@ class Monostack < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/JoaoOliveira889/monostack/releases/download/v0.0.9/monostack_Linux_x86_64.tar.gz"
-      sha256 "8baa9fc51f1e2ccbf4f5acfa238913a7e12a46feb5013ca6f2111ea83dffcd9f"
+      url "https://github.com/JoaoOliveira889/monostack/releases/download/v0.1.0/monostack_Linux_x86_64.tar.gz"
+      sha256 "f34a46eae047f6609efe0f7f8b5f12d824044e41b61277fbee666bb3588b9911"
       define_method(:install) do
         bin.install "monostack"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/JoaoOliveira889/monostack/releases/download/v0.0.9/monostack_Linux_arm64.tar.gz"
-      sha256 "915f03f5a826d0d7f008597248e540b011019d2436112356fce907be3cda56ef"
+      url "https://github.com/JoaoOliveira889/monostack/releases/download/v0.1.0/monostack_Linux_arm64.tar.gz"
+      sha256 "20975ee6ec1374d6db0b177be0d73ecb331675972b4d5911136f31040aa2e0dc"
       define_method(:install) do
         bin.install "monostack"
       end
