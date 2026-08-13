@@ -4,22 +4,22 @@ cask "monogit" do
 
   on_macos do
     on_intel do
-      sha256 "b5a1cedd385eaac0d85f5b9f22d73d987f643de2bc7a0fb8b9e546aec516f96f"
+      sha256 "672e5de92dfbe9b262dd001fe9a82c5e5cd2193b7327f07b042a261bed2a9f2b"
       url "https://github.com/JoaoOliveira889/monogit/releases/download/v#{version}/monogit_Darwin_x86_64.tar.gz"
     end
     on_arm do
-      sha256 "d9140ed4662771755d963128e02cb5b68cf0a4599225004229c48e448e891d8e"
+      sha256 "f3e689f4d660cd8521ac364ef76e8e3c4c7c8077bd865d5b986954c8d25414bf"
       url "https://github.com/JoaoOliveira889/monogit/releases/download/v#{version}/monogit_Darwin_arm64.tar.gz"
     end
   end
 
   on_linux do
     on_intel do
-      sha256 "22da52e95cb8f72db86e202965c32d8fc09ea92d4d49f68199bc92af674719f0"
+      sha256 "82cfd3a7b9e26b138f24ac0d5d33f8db640facad69c6f9fe0928e7743c8520ea"
       url "https://github.com/JoaoOliveira889/monogit/releases/download/v#{version}/monogit_Linux_x86_64.tar.gz"
     end
     on_arm do
-      sha256 "07b32644f7999d50bb5b39423f329e52b55f2fb1c4e130ee3d742a09a18d5c7c"
+      sha256 "9c2cc16cc9cb877cdc16c91158b315e80be7efdf3b1cf23cdc9ab9febb02ba39"
       url "https://github.com/JoaoOliveira889/monogit/releases/download/v#{version}/monogit_Linux_arm64.tar.gz"
     end
   end
